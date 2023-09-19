@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Tab</title>
+  </head>
+  <body class="gradient-bg">
+    <style>
+      * {
+        --menu-w: 1000px;
+        --link-w: calc(var(--menu-w) / 3);
+        margin: 0;
+        color: lightgray;
+        /* text-decoration: underline double navy; */
+
+        text-decoration: none;
+        font-family: "Segoe Print", "Bradley Hand", Chilanka, TSCu_Comic, casual,
+          cursive;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .main-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        /* border: 1px solid; */
+        width: var(--menu-w);
+        aspect-ratio: 8/5;
+        gap: 10px;
+        /* height: 500px; */
+      }
+
+      .gradient-bg {
+        background: linear-gradient(
+          150deg,
+          rgb(26, 26, 26),
+          dimgray,
+          whitesmoke
+        );
+        background-size: 180% 180%;
+        animation: gradient-an 6s ease-in-out infinite;
+      }
+
+      @keyframes gradient-an {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .link,
+      .tiny-link {
+        height: auto;
+        width: auto;
+        /* aspect-ratio: 1; */
+        border: 5px double rgba(0, 0, 0, 0.1);
+        background-color: rgba(230, 230, 230, 0.05); /* <<< COOL EFFECT */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        /* margin: 5px; */
+        box-shadow: 0 5px 5px 1px rgba(0, 0, 0, 0.3);
+        transition: 0.3s ease-in-out;
+      }
+
+      .link {
+        grid-column: span 2;
+        grid-row: span 2;
+        font-size: 1em;
+      }
+
+      .tiny-link {
+        font-size: 0.7em;
+      }
+
+      .link:hover,
+      .tiny-link:hover {
+        border: 3px double rgba(0, 0, 0, 0.2);
+        background-color: rgba(230, 230, 230, 0.2); /* <<< COOL EFFECT */
+        box-shadow: 0 10px 8px 3px rgba(0, 0, 0, 0.3);
+        scale: 1.01;
+      }
+
+      a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s ease-in-out;
+        /* text-shadow: 1px 1px 3px lime, 1px -1px 3px limegreen, -1px 1px 3px green, -1px -1px 3px greenyellow; */
+        /* text-shadow: 1px 1px 0 darkgray, 1px -1px 0 black, -1px 1px 0 darkgray, -1px -1px 0 black; */
+        /* text-align: center; */
+      }
+      a:hover {
+        /* text-shadow: 3px 1px 0 rgba(61, 176, 238, 0.8), -3px -1px 0 rgba(255, 100, 80, 0.8); */
+        color: lightgray;
+        /* text-shadow: 0 0 10px black; */
+        scale: 1.1;
+      }
+
+      img {
+        opacity: 0.7;
+      }
+
+      .tiny-site2 {
+        grid-row-start: 2;
+      }
+
+      .tiny-site9 {
+        grid-row-start: 4;
+      }
+      
+    </style>
+
+    <div class="main-container">
+      <div class="tiny-link tiny-site1">
+        <a href="https://doc.new">
+          <h1>Document</h1>
+          <img src="./google-docs.png" alt="" width="40%" />
+        </a>
+      </div>
+      <div class="tiny-link tiny-site2">
+        <a href="https://sheet.new">
+          <h1>Sheet</h1>
+          <img src="./google-sheets.png" alt="" width="40%" />
+        </a>
+      </div>
+      <div class="link site3">
+        <a href="https://www.youtube.com">
+          <h1>Youtube</h1>
+          <img src="./youtube.png" alt="" width="40%" />
+        </a>
+      </div>
+      <div class="link site4">
+        <a href="https://mail.google.com/mail/u/0/#inbox">
+          <h1>Gmail</h1>
+          <img src="./gmail.png" alt="" width="40%" />
+        </a>
+      </div>
+      <div class="link site5">
+        <a href="https://drive.google.com/drive/my-drive">
+          <h1>Google Drive</h1>
+          <img src="./google-drive.png" alt="" width="55%" />
+        </a>
+      </div>
+      <div class="tiny-link tiny-site6">
+        <a href="https://doc.new">
+          <h1>Document</h1>
+          <img src="./github.png" alt="" width="40%" />
+        </a>
+      </div>
+      <div class="tiny-link tiny-site7">
+        <a href="https://sheet.new">
+          <h1>Document</h1>
+          <img src="./github.png" alt="" width="40%" />
+        </a>
+      </div>
+      <div class="tiny-link tiny-site8">
+        <a href="https://slides.new">
+          <h1>Slide</h1>
+          <img src="./google-slides.svg" alt="" width="40%" />
+        </a>
+      </div>
+      <div class="tiny-link tiny-site9">
+        <a href="https://forms.new">
+          <h1>Form</h1>
+          <img src="./google-forms.png" alt="" width="40%" />
+        </a>
+      </div>
+      <div class="link site10">
+        <a href="https://chat.openai.com/">
+          <h1>Chat GPT</h1>
+          <img src="./chat-gpt.png" alt="" width="40%" />
+        </a>
+      </div>
+      <div class="link site11">
+        <a href="https://chess.com">
+          <h1>Chess.com</h1>
+          <img src="./chess-com.png" alt="" width="40%" />
+        </a>
+      </div>
+      <div class="link site12">
+        <a href="https://github.com">
+          <h1>Github</h1>
+          <img src="./github.png" alt="" width="40%" />
+        </a>
+      </div>
+      <div class="tiny-link tiny-site13">
+        <a href="https://doc.new">
+          <h1>Document</h1>
+          <img src="./github.png" alt="" width="40%" />
+        </a>
+      </div>
+      <div class="tiny-link tiny-site14">
+        <a href="https://sheet.new">
+          <h1>Document</h1>
+          <img src="./github.png" alt="" width="40%" />
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
