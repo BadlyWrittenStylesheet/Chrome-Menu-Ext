@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        background-color: #181818;
+        align-items: center;
+        font-family: "Monoton", cursive;
+        background-image: linear-gradient(300deg, #222, darkgreen 33%, #222);
+      }
+      h1 {
+        font-size: 196px;
+        color: whitesmoke;
+        text-align: center;
+        line-height: 16rem;
+        font-weight: 100;
+        text-shadow: 0 0 10px lime, 0 0 15px greenyellow;
+        animation: bugged 6s ease-in-out infinite;
+      }
+      /* , -5px 0 0 cyan, 5px 0 0 red, -5px 3px cyan, 5px -3px 0 red */
+      @keyframes bugged {
+        0% {
+          text-shadow: 0 0 10px lime, 0 0 15px greenyellow;
+        }
+        50% {
+          text-shadow: 0 0 5px lime, 0 0 10px lime;
+        }
+      }
+      .gradient-background {
+        background: linear-gradient(300deg, #222, darkgreen, #222);
+        background-size: 180% 180%;
+        animation: gradient-animation 5s ease infinite;
+      }
+
+      @keyframes gradient-animation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    </style>
+  </head>
+  <body class="gradient-background">
+    <h1>THE<br />MATRIX</h1>
+  </body>
+</html>

@@ -2,6 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New Tab</title>
   </head>
@@ -17,6 +23,7 @@
         text-decoration: none;
         font-family: "Segoe Print", "Bradley Hand", Chilanka, TSCu_Comic, casual,
           cursive;
+        font-family: "Inclusive Sans", sans-serif;
       }
 
       body {
@@ -38,11 +45,15 @@
       }
 
       .gradient-bg {
-        background: linear-gradient(
+        /* background: linear-gradient(
           150deg,
           rgb(26, 26, 26),
           dimgray,
           whitesmoke
+        ); */
+        background: radial-gradient(
+          lightblue 30%,
+          darkcyan
         );
         background-size: 180% 180%;
         animation: gradient-an 6s ease-in-out infinite;
@@ -67,10 +78,7 @@
         /* aspect-ratio: 1; */
         border: 5px double rgba(0, 0, 0, 0.1);
         background-color: rgba(230, 230, 230, 0.05); /* <<< COOL EFFECT */
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
+
         /* margin: 5px; */
         box-shadow: 0 5px 5px 1px rgba(0, 0, 0, 0.3);
         transition: 0.3s ease-in-out;
@@ -99,18 +107,17 @@
         height: 100%;
         display: flex;
         flex-direction: column;
+        justify-content: space-evenly;
         align-items: center;
-        justify-content: center;
         transition: 0.3s ease-in-out;
         /* text-shadow: 1px 1px 3px lime, 1px -1px 3px limegreen, -1px 1px 3px green, -1px -1px 3px greenyellow; */
-        /* text-shadow: 1px 1px 0 darkgray, 1px -1px 0 black, -1px 1px 0 darkgray, -1px -1px 0 black; */
+        text-shadow: 1px 1px rgba(149, 255, 149, 0.5), 1px -1px  rgba(149, 255, 149, 0.5), -1px 1px rgba(149, 255, 149, 0.5), -1px -1px rgba(149, 255, 149, 0.5);
         /* text-align: center; */
       }
       a:hover {
         /* text-shadow: 3px 1px 0 rgba(61, 176, 238, 0.8), -3px -1px 0 rgba(255, 100, 80, 0.8); */
         color: lightgray;
         /* text-shadow: 0 0 10px black; */
-        scale: 1.1;
       }
 
       img {
@@ -124,7 +131,6 @@
       .tiny-site9 {
         grid-row-start: 4;
       }
-      
     </style>
 
     <div class="main-container">
@@ -177,9 +183,9 @@
         </a>
       </div>
       <div class="tiny-link tiny-site9">
-        <a href="https://forms.new">
-          <h1>Form</h1>
-          <img src="./google-forms.png" alt="" width="40%" />
+        <a href="https://classroom.google.com/">
+          <h1>Classroom</h1>
+          <img src="./google-classroom.png" alt="" width="40%" />
         </a>
       </div>
       <div class="link site10">
