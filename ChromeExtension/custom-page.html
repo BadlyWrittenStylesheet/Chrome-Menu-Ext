@@ -10,129 +10,9 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New Tab</title>
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body class="gradient-bg">
-    <style>
-      * {
-        --menu-w: 1000px;
-        --link-w: calc(var(--menu-w) / 3);
-        margin: 0;
-        color: lightgray;
-        /* text-decoration: underline double navy; */
-
-        text-decoration: none;
-        font-family: "Segoe Print", "Bradley Hand", Chilanka, TSCu_Comic, casual,
-          cursive;
-        font-family: "Inclusive Sans", sans-serif;
-      }
-
-      body {
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .main-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        /* border: 1px solid; */
-        width: var(--menu-w);
-        aspect-ratio: 8/5;
-        gap: 10px;
-        /* height: 500px; */
-      }
-
-      .gradient-bg {
-        /* background: linear-gradient(
-          150deg,
-          rgb(26, 26, 26),
-          dimgray,
-          whitesmoke
-        ); */
-        background: radial-gradient(
-          lightblue 30%,
-          darkcyan
-        );
-        background-size: 180% 180%;
-        animation: gradient-an 6s ease-in-out infinite;
-      }
-
-      @keyframes gradient-an {
-        0% {
-          background-position: 0% 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-        100% {
-          background-position: 0% 50%;
-        }
-      }
-
-      .link,
-      .tiny-link {
-        height: auto;
-        width: auto;
-        /* aspect-ratio: 1; */
-        border: 5px double rgba(0, 0, 0, 0.1);
-        background-color: rgba(230, 230, 230, 0.05); /* <<< COOL EFFECT */
-
-        /* margin: 5px; */
-        box-shadow: 0 5px 5px 1px rgba(0, 0, 0, 0.3);
-        transition: 0.3s ease-in-out;
-      }
-
-      .link {
-        grid-column: span 2;
-        grid-row: span 2;
-        font-size: 1em;
-      }
-
-      .tiny-link {
-        font-size: 0.7em;
-      }
-
-      .link:hover,
-      .tiny-link:hover {
-        border: 3px double rgba(0, 0, 0, 0.2);
-        background-color: rgba(230, 230, 230, 0.2); /* <<< COOL EFFECT */
-        box-shadow: 0 10px 8px 3px rgba(0, 0, 0, 0.3);
-        scale: 1.01;
-      }
-
-      a {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        transition: 0.3s ease-in-out;
-        /* text-shadow: 1px 1px 3px lime, 1px -1px 3px limegreen, -1px 1px 3px green, -1px -1px 3px greenyellow; */
-        text-shadow: 1px 1px rgba(149, 255, 149, 0.5), 1px -1px  rgba(149, 255, 149, 0.5), -1px 1px rgba(149, 255, 149, 0.5), -1px -1px rgba(149, 255, 149, 0.5);
-        /* text-align: center; */
-      }
-      a:hover {
-        /* text-shadow: 3px 1px 0 rgba(61, 176, 238, 0.8), -3px -1px 0 rgba(255, 100, 80, 0.8); */
-        color: lightgray;
-        /* text-shadow: 0 0 10px black; */
-      }
-
-      img {
-        opacity: 0.7;
-      }
-
-      .tiny-site2 {
-        grid-row-start: 2;
-      }
-
-      .tiny-site9 {
-        grid-row-start: 4;
-      }
-    </style>
-
     <div class="main-container">
       <div class="tiny-link tiny-site1">
         <a href="https://doc.new">
@@ -219,5 +99,6 @@
         </a>
       </div>
     </div>
+    <script src="./page.js"></script>
   </body>
 </html>
