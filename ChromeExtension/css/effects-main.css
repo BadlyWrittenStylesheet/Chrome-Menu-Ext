@@ -1,0 +1,14 @@
+.link, .tiny-link {
+  /* background: linear-gradient(-45deg, #000a 45%, white 45% 55%, #000a 55%); */
+  /* background: conic-gradient(indigo, white, white, indigo); */
+  /* -webkit-background-clip: text; */
+  
+  h1 {
+    color: red
+    ;
+    /* background-color: red; */
+
+    /* text-shadow: 0 0 5px white; */
+  }
+
+}
