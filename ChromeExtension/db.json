@@ -1,28 +1,54 @@
 {
-    "nav-top": {
-        "link-number": 4,
-        "link1-text": "Plan Lekcji",
-        "link1-url": "https://technischools.edupage.org/timetable/",
-        "link2-name": "Seterra",
-        "link2-url": "https://www.geoguessr.com/pl/quiz/seterra",
-        "link3-name": "Powłoki elektronowe",
-        "link3-url": "https://pl.wikipedia.org/wiki/Lista_konfiguracji_elektronowych_pierwiastk%C3%B3w_chemicznych",
-        "link4-name": "CSS Colors",
-        "link4-url": "https://www.w3.org/wiki/CSS/Properties/color/keywords"
+  "navTop": [
+    {
+      "name": "Plan Lekcji",
+      "url": "https://technischools.edupage.org/timetable/"
     },
-    "nav-left": {
-        "link-number": 1,
-        "link1-name": "Cubic Beziers",
-        "link1-url": ""
+    {
+      "name": "Seterra",
+      "url": "https://www.geoguessr.com/pl/quiz/seterra"
     },
-    "nav-right": {
-        "link-number": 1,
-        "link1-name": "Cubic Beziers",
-        "link1-url": ""
-    },
-    "nav-bottom": {
-        "link-number": 1,
-        "link1-name": "Cubic Beziers",
-        "link1-url": ""
+    {
+      "name": "Powłoki elektronowe",
+      "url": "https://pl.wikipedia.org/wiki/Lista_konfiguracji_elektronowych_pierwiastk%C3%B3w_chemicznych"
     }
+  ],
+  "navLeft": [
+    {
+      "name": "Cubic Beziers",
+      "url": "https://easings.co/"
+    },
+    {
+      "name": "CSS Portal",
+      "url": "https://www.cssportal.com/"
+    },
+    {
+      "name": "CSS Battle",
+      "url": "https://cssbattle.dev/"
+    },
+    {
+      "name": "MDN",
+      "url": "https://developer.mozilla.org/en-US/"
+    },
+    {
+      "name": "CSS Colors",
+      "url": "https://www.w3.org/wiki/CSS/Properties/color/keywords"
+    }
+  ],
+  "navRight": [
+    {
+      "name": "Cubic Beziers",
+      "url": "https://easings.co/"
+    },
+    {
+      "name": "Cubic Beziers2",
+      "url": "https://easings.co/"
+    }
+  ],
+  "navBottom": [
+    {
+      "name": "Cubic Beziers",
+      "url": ""
+    }
+  ]
 }
