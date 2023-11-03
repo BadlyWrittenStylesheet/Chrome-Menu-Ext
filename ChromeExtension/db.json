@@ -37,18 +37,46 @@
   ],
   "navRight": [
     {
-      "name": "Cubic Beziers",
-      "url": "https://easings.co/"
+      "name" : "pass",
+      "url" : "http://ju.tz/apal"
     },
     {
-      "name": "Cubic Beziers2",
-      "url": "https://easings.co/"
+      "name" : "tie",
+      "url" : "http://dirru.cd/nasibsi"
+    },
+    {
+      "name" : "offer",
+      "url" : "http://libelakel.ro/sevej"
+    },
+    {
+      "name" : "interior",
+      "url" : "http://pufnemwu.np/varcuz"
+    },
+    {
+      "name" : "major",
+      "url" : "http://zago.ua/so"
+    },
+    {
+      "name" : "listen",
+      "url" : "http://buz.gq/fijamo"
     }
   ],
   "navBottom": [
     {
-      "name": "Cubic Beziers",
-      "url": ""
+      "name" : "skin",
+      "url" : "http://ezidi.sb/gekdumlo"
+    },
+    {
+      "name" : "practice",
+      "url" : "http://meal.sn/ka"
+    },
+    {
+      "name" : "various",
+      "url" : "http://ma.sz/gasraf"
+    },
+    {
+      "name" : "little",
+      "url" : "http://figsekup.bd/gampo"
     }
   ]
 }
