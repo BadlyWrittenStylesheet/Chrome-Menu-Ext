@@ -1,0 +1,39 @@
+:root {
+    --dark: #333;
+    --light: #eee;
+    font-family: Arial;
+}
+
+* {
+    margin: 0;
+}
+
+html {
+    background-color: white;
+}
+
+body {
+    margin: 0;
+    width: 400px;
+    height: 500px;
+    background: var(--dark);
+    color: var(--light);
+    /* border-radius: 3rem; */
+}
+
+.title {
+    text-align: center;
+    text-shadow: 0 0 .1rem currentColor;
+    font-size: 2rem;
+    background-color: red;
+}
+
+.subtitle {
+    background-color: red;
+    text-align: center;
+}
+
+/* #hours::after,
+#minutes::after {
+    content: ' :';
+} */
